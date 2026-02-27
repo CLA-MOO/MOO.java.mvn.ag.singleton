@@ -1,0 +1,16 @@
+{
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot",
+				"vscjava.vscode-java-pack",
+				"hediet.vscode-drawio",
+				"bierner.markdown-mermaid",
+				"esbenp.prettier-vscode",
+				"mhutchie.git-graph",
+				"ms-vscode.copilot-mermaid-diagram"
+			]
+		}
+	},
+	"postCreateCommand": "mvn clean && clear"
+}
