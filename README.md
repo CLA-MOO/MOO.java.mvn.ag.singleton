@@ -1,5 +1,7 @@
 # Ejercicio: Patrón de Diseño Singleton — Monitor de Línea de Producción Automotriz
 
+![Línea de producción automotriz](https://upload.wikimedia.org/wikipedia/commons/2/29/001_Car_factory_assembly_line_-_Opel_factory_in_Gliwice%2C_Poland.jpg)
+
 ## Descripción del ejercicio
 
 Implementa el patrón de diseño **Singleton** para simular el monitor central de una
