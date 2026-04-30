@@ -42,7 +42,7 @@ public class AppTest
         MonitorDeLineaDeProduccion m1 = MonitorDeLineaDeProduccion.getInstancia();
         MonitorDeLineaDeProduccion m2 = MonitorDeLineaDeProduccion.getInstancia();
         m1.iniciarLinea();
-        assertTrue("El estado de la línea debe ser compartido entre referencias", m2.isLineaActiva());
+        assertTrue("El estado de la linea debe ser compartido entre referencias", m2.isLineaActiva());
     }
 
     /**
@@ -55,7 +55,7 @@ public class AppTest
         m1.registrarVehiculo("Sedán XR-5");
         m1.registrarVehiculo("SUV Trail-3");
         MonitorDeLineaDeProduccion m2 = MonitorDeLineaDeProduccion.getInstancia();
-        assertEquals("El contador de vehículos debe ser compartido", 2, m2.getVehiculosEnsamblados());
+        assertEquals("El contador de vehiculos debe ser compartido", 2, m2.getVehiculosEnsamblados());
     }
 
     /**
@@ -77,7 +77,7 @@ public class AppTest
         MonitorDeLineaDeProduccion m1 = MonitorDeLineaDeProduccion.getInstancia();
         String resultado = m1.registrarVehiculo("Pickup TMax");
         assertEquals("Error: la linea esta detenida, no se puede registrar el vehiculo.", resultado);
-        assertEquals("El contador de vehículos no debe incrementarse cuando la linea esta detenida.",
+        assertEquals("El contador de vehiculos no debe incrementarse cuando la linea esta detenida.",
                 0, m1.getVehiculosEnsamblados());
     }
 
@@ -89,7 +89,7 @@ public class AppTest
         MonitorDeLineaDeProduccion m1 = MonitorDeLineaDeProduccion.getInstancia();
         m1.iniciarLinea();
         m1.detenerLinea();
-        assertFalse("Después de detener la línea, isLineaActiva debe ser false", m1.isLineaActiva());
+        assertFalse("Despues de detener la linea, isLineaActiva debe ser false", m1.isLineaActiva());
     }
 
     /**
