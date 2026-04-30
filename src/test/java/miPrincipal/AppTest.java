@@ -76,8 +76,8 @@ public class AppTest
     public void testRegistroConLineaDetenida() {
         MonitorDeLineaDeProduccion m1 = MonitorDeLineaDeProduccion.getInstancia();
         String resultado = m1.registrarVehiculo("Pickup TMax");
-        assertEquals("Error: la línea está detenida, no se puede registrar el vehículo.", resultado);
-        assertEquals("El contador de vehículos no debe incrementarse cuando la línea está detenida.",
+        assertEquals("Error: la linea esta detenida, no se puede registrar el vehiculo.", resultado);
+        assertEquals("El contador de vehículos no debe incrementarse cuando la linea esta detenida.",
                 0, m1.getVehiculosEnsamblados());
     }
 
