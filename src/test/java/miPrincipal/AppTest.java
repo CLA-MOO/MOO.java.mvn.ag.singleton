@@ -52,7 +52,7 @@ public class AppTest
     public void testContadorVehiculosCompartido() {
         MonitorDeLineaDeProduccion m1 = MonitorDeLineaDeProduccion.getInstancia();
         m1.iniciarLinea();
-        m1.registrarVehiculo("Sedán XR-5");
+        m1.registrarVehiculo("Sedan XR-5");
         m1.registrarVehiculo("SUV Trail-3");
         MonitorDeLineaDeProduccion m2 = MonitorDeLineaDeProduccion.getInstancia();
         assertEquals("El contador de vehiculos debe ser compartido", 2, m2.getVehiculosEnsamblados());
