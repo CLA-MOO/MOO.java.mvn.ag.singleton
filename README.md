@@ -20,11 +20,11 @@ un estado global coherente.
 ### Ejemplo de Ejecución
 
 ```
-=== Planta Automotriz — Patron Singleton ===
+=== Planta Automotriz ===
 
 Monitor (Produccion): Listo !
 Monitor (Calidad): Listo !
-¿Es la misma instancia? true
+Es la misma instancia? true
 
 Linea de produccion INICIADA.
 Vehiculo ensamblado: Sedan XR-5 (total: 1)
@@ -35,8 +35,8 @@ Defecto registrado: Pintura con burbujas en puerta delantera (total: 1)
 --- Estado global de la linea ---
 Vehiculos ensamblados (desde Produccion): 3
 Defectos detectados   (desde Calidad):    1
-¿Linea activa?        (desde Calidad):    true
-Linea de producción DETENIDA.
+Linea activa?         (desde Calidad):    true
+Linea de produccion DETENIDA.
 
 Intento de registro con linea detenida:
 Error: la linea esta detenida, no se puede registrar defectos.
